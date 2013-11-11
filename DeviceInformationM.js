@@ -75,15 +75,15 @@ var SystemID = function(){
 }
 util.inherits(SystemID, BlenoCharacteristic);
 
-// var RegulatoryCertification = function(){
-//	RegulatoryCertification.super_.call(this, {
-//		uuid:'2A2A',
-//		properties: ['read'],
-//		value: new Buffer('Experimental'),
+ var RegulatoryCertification = function(){
+	RegulatoryCertification.super_.call(this, {
+		uuid:'2A2A',
+		properties: ['read'],
+		value: new Buffer('FE 00 65 78 70 65 72 69 6D 65 6E 74 61 6C'),
 
-//	});
-//}
-//util.inherits(RegulatoryCertification, BlenoCharacteristic);
+	});
+}
+util.inherits(RegulatoryCertification, BlenoCharacteristic);
 
 //var DeviceName = function(){
 //	DeviceName.super_.call(this, {
